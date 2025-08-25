@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Test Page</title>
+</head>
+<body>
+    <h1>Test Page Works!</h1>
+    <div th:if="${files != null}">
+        <p th:text="'Number of files: ' + ${#lists.size(files)}"></p>
+    </div>
+    <div th:if="${files == null}">
+        <p>No files found</p>
+    </div>
+</body>
+</html>
